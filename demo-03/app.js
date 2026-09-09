@@ -61,7 +61,7 @@ document.getElementById("btnNormal").addEventListener("click", () => {
         "Starting the new order",
         `New order ${newOrderId} has been created and is ready for processing.`,
         "↻",
-        `NEW_ORDER | ${newOrderId} | Flipkart`
+        `NEW_ORDER | ${newOrderId} | Amazon`
     );
 
     orderStateBadge.textContent = "PENDING";
