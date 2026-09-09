@@ -77,15 +77,15 @@ document.getElementById("btnNormal").addEventListener("click", () => {
 document.getElementById("btnStart").addEventListener("click", () => {
     updateRecordingStatus(
         "Recording started",
-        "START_RECORDING - Operator verification in progress.",
+        "START_PACKING - Operator verification in progress.",
         "●",
-        "START_RECORDING"
+        "START_PACKING"
     );
 
     orderStateBadge.textContent = "RECORDING";
     orderStateBadge.className = "badge pending";
 
-    addLog("START_RECORDING trigger dynamically inserted into target DIV");
+    addLog("START_PACKING trigger dynamically inserted into target DIV");
 });
 
 /* PACK NEXT — no recording trigger */
@@ -109,15 +109,15 @@ document.getElementById("btnUpdate").addEventListener("click", () => {
 document.getElementById("btnStop").addEventListener("click", () => {
     updateRecordingStatus(
         "Order processing completed",
-        "STOP_RECORDING - Waiting for AWB confirmation.",
+        "STOP_PACKING - Waiting for AWB confirmation.",
         "■",
-        "STOP_RECORDING"
+        "STOP_PACKING"
     );
 
     orderStateBadge.textContent = "COMPLETED";
     orderStateBadge.className = "badge pending";
 
-    addLog("STOP_RECORDING trigger dynamically inserted into target DIV");
+    addLog("STOP_PACKING trigger dynamically inserted into target DIV");
 });
 
 /* CLEAR LOG */
