@@ -29,7 +29,7 @@ function generateAwb() {
 }
 
 function updateRecordingStatus(title, description, icon, triggerText = "") {
-    const target = document.getElementById("recording-status");
+    const target = document.getElementById("packing-status");
 
     target.innerHTML = `
         <div class="status-icon pending-icon">${icon}</div>
@@ -143,7 +143,7 @@ document.querySelectorAll(".nav-item").forEach(button => {
         pageTitle.textContent =
             `${page.charAt(0).toUpperCase() + page.slice(1)} Page`;
 
-        const oldTarget = document.getElementById("recording-status");
+        const oldTarget = document.getElementById("packing-status");
         const replacement = oldTarget.cloneNode(true);
 
         replacement.innerHTML = `
